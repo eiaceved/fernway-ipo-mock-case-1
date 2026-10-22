@@ -1,9 +1,9 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}.home-pill{font:600 12px var(--mono,-apple-system);padding:5px 11px;border-radius:999px;color:#fff;background:var(--accent,#0d6b61);text-decoration:none;white-space:nowrap;margin-right:12px}
-</style></head><body>
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Fernway IPO Mock Case</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
 <style>
 /* Layout: one reading column (max 820px) under a sticky step rail. Every step runs the same loop:
    interviewer prompt -> your move -> reveal a strong answer. Exhibits sit inside the column like workpapers. */
@@ -309,512 +309,485 @@ footer{padding-block:40px 64px;border-top:1px solid var(--line);font-size:14px;c
   .scorer li{grid-template-columns:auto minmax(0,1fr)}
   .scorer .pick{grid-column:2}
 }
-</style>
-
-<nav class="rail" aria-label="Case steps">
-  <div class="rail-in">
+.home-pill{font:600 12px var(--mono,-apple-system);padding:5px 11px;border-radius:999px;color:#fff;background:var(--accent,#0d6b61);text-decoration:none;white-space:nowrap;margin-right:12px}</style>
+<nav aria-label="Case steps" class="rail">
+<div class="rail-in">
     <a class="home-pill" href="/">All cases</a>
-    <div class="chips" id="chips">
-      <a href="#primer">Primer</a><a href="#prompt">Prompt</a><a href="#clarify">Clarify</a><a href="#framework">Framework</a><a href="#ex1">Exhibit 1</a><a href="#ex2">Exhibit 2</a><a href="#sizing">Sizing</a><a href="#prioritize">Prioritize</a><a href="#recommend">Recommend</a><a href="#drills">Drills</a><a href="#test">Test</a>
-    </div>
-    <label class="speed" for="rate"><span>Voice</span>
-      <select id="rate" aria-label="Read-aloud speed">
-        <option value="0.9">0.9×</option><option value="1" selected>1×</option><option value="1.15">1.15×</option><option value="1.3">1.3×</option>
-      </select>
-    </label>
-  </div>
-</nav>
 
+<div class="chips" id="chips">
+<a href="#primer">Primer</a><a href="#prompt">Prompt</a><a href="#clarify">Clarify</a><a href="#framework">Framework</a><a href="#ex1">Exhibit 1</a><a href="#ex2">Exhibit 2</a><a href="#sizing">Sizing</a><a href="#prioritize">Prioritize</a><a href="#recommend">Recommend</a><a href="#drills">Drills</a><a href="#test">Test</a>
+</div>
+<label class="speed" for="rate"><span>Voice</span>
+<select aria-label="Read-aloud speed" id="rate">
+<option value="0.9">0.9×</option><option selected="" value="1">1×</option><option value="1.15">1.15×</option><option value="1.3">1.3×</option>
+</select>
+</label>
+</div>
+</nav>
 <main>
 <header class="hero wrap">
-  <p class="eyebrow">Mock case · PwC CMAAS · about 35 minutes</p>
-  <h1>Fernway Pet Co.</h1>
-  <p class="lede" data-say>An online pet-supply company wants to go public in 12 months. You're the PwC CMAAS consultant deciding whether its accounting, controls, and systems can be ready in time, and what to fix first.</p>
-  <ol class="how">
-    <li><b>Listen or read</b> the interviewer's prompt. Every step has a Listen button.</li>
-    <li><b>Answer out loud</b> before you reveal anything. Use the timers.</li>
-    <li><b>Compare</b> with the strong answer, then move to the next step.</li>
-  </ol>
-  <div class="hero-actions">
-    <a class="btn primary" href="#prompt">Start the case</a>
-    <a class="btn" href="#primer">2-minute primer first</a>
-    <a class="btn" href="#test">Jump to the practice test</a>
-  </div>
+<p class="eyebrow">Mock case · PwC CMAAS · about 35 minutes</p>
+<h1>Fernway Pet Co.</h1>
+<p class="lede" data-say="">An online pet-supply company wants to go public in 12 months. You're the PwC CMAAS consultant deciding whether its accounting, controls, and systems can be ready in time, and what to fix first.</p>
+<ol class="how">
+<li><b>Listen or read</b> the interviewer's prompt. Every step has a Listen button.</li>
+<li><b>Answer out loud</b> before you reveal anything. Use the timers.</li>
+<li><b>Compare</b> with the strong answer, then move to the next step.</li>
+</ol>
+<div class="hero-actions">
+<a class="btn primary" href="#prompt">Start the case</a>
+<a class="btn" href="#primer">2-minute primer first</a>
+<a class="btn" href="#test">Jump to the practice test</a>
+</div>
 </header>
-
 <div class="wrap">
-
 <!-- 01 PRIMER -->
 <section class="step" id="primer">
-  <div class="sh"><span class="idx">01</span><h2>What CMAAS does at PwC</h2><button class="btn small listen" type="button">Listen</button></div>
-  <p class="def" data-say>CMAAS stands for Capital Markets and Accounting Advisory Services. The team helps companies get their accounting and reporting right during big moments: going public, buying or selling a business, raising money, or changing systems.</p>
-  <p class="sub" data-say>Put simply, CMAAS helps clients answer one question: are our numbers right, and can we report them the way investors and regulators expect, even while the business is changing?</p>
-
-  <div class="split">
-    <div class="panel">
-      <h3>Capital markets</h3>
-      <p class="tag">Helps companies raise money</p>
-      <ul data-say>
-        <li>IPO readiness: finding the accounting, controls, and reporting gaps.</li>
-        <li>Helping draft the financial sections of the S-1 filing.</li>
-        <li>Debt and equity offerings, and answering SEC comment letters.</li>
-      </ul>
-    </div>
-    <div class="panel">
-      <h3>Accounting advisory</h3>
-      <p class="tag">Solves hard accounting problems around deals and change</p>
-      <ul data-say>
-        <li>Carve-out financial statements when a company sells a division.</li>
-        <li>Acquisition accounting after one company buys another.</li>
-        <li>New or tricky standards, like revenue and lease accounting.</li>
-        <li>Accounting input when a company rolls out a new ERP system.</li>
-        <li>Financial reporting, internal controls, and fixing restatements.</li>
-      </ul>
-    </div>
-  </div>
-
-  <p class="h-sec">What a first-year actually does</p>
-  <ul data-say style="margin:8px 0 0;padding-left:1.2em">
-    <li><b>Research.</b> Read the accounting rules and help write a memo on how a tricky transaction should be booked.</li>
-    <li><b>Schedules.</b> Build the spreadsheets behind adjustments, like moving revenue into the right month.</li>
-    <li><b>Gap assessments.</b> Compare a client's close, controls, and policies with what a public company needs, and list the gaps.</li>
-    <li><b>Drafting.</b> Help prepare footnotes and financial sections for filings, then tie every number back to support.</li>
-  </ul>
-
-  <p class="h-sec">The IPO readiness path, the backbone of many CMAAS projects</p>
-  <ol class="cycle" data-say aria-label="Assess, fix, file, report">
-    <li><b>Assess</b><span>Where are the gaps?</span></li>
-    <li><b>Fix</b><span>Policies, people, controls, systems.</span></li>
-    <li><b>File</b><span>Audited numbers and the S-1.</span></li>
-    <li><b>Report</b><span>Quarterly filings as a public company.</span></li>
-  </ol>
-  <p class="cycle-note">Most companies start 12 to 24 months before the IPO</p>
-
-  <p class="h-sec">Ten terms to drop naturally</p>
-  <div class="vocab">
-    <div class="term" data-say><b>IPO and S-1</b><p>An IPO is the first time a company sells shares to the public. The S-1 is the registration document it files with the SEC first, including audited financial statements.</p></div>
-    <div class="term" data-say><b>SEC and PCAOB</b><p>The SEC regulates public companies. The PCAOB sets the audit standards for them, so a pre-IPO audit must meet PCAOB standards.</p></div>
-    <div class="term" data-say><b>Emerging growth company (EGC)</b><p>A newer company with under about 1.2 billion dollars in yearly revenue. It can show two years of audited financials instead of three, and gets lighter controls rules for up to five years.</p></div>
-    <div class="term" data-say><b>SOX 404</b><p>The Sarbanes-Oxley rule on internal controls over financial reporting. Management assesses the controls every year, and once a company is large enough, its auditor tests them too.</p></div>
-    <div class="term" data-say><b>Material weakness</b><p>A gap in controls serious enough that a big error in the financial statements could go uncaught. It has to be disclosed to investors.</p></div>
-    <div class="term" data-say><b>Segregation of duties</b><p>No one person should both do a task and approve it, like posting a journal entry and approving that same entry.</p></div>
-    <div class="term" data-say><b>Revenue recognition (ASC 606)</b><p>The rule for when to book revenue: when you deliver what the customer paid for. Cut-off means booking it in the right period.</p></div>
-    <div class="term" data-say><b>Financial close</b><p>Finalizing the books each month or quarter. Public companies need a fast, reliable close to meet filing deadlines.</p></div>
-    <div class="term" data-say><b>Restatement</b><p>Reissuing past financial statements because they contained a material error. It's expensive and damages investor trust.</p></div>
-    <div class="term" data-say><b>Carve-out</b><p>Separate financial statements for one part of a company that's being sold or spun off as its own business.</p></div>
-  </div>
+<div class="sh"><span class="idx">01</span><h2>What CMAAS does at PwC</h2><button class="btn small listen" type="button">Listen</button></div>
+<p class="def" data-say="">CMAAS stands for Capital Markets and Accounting Advisory Services. The team helps companies get their accounting and reporting right during big moments: going public, buying or selling a business, raising money, or changing systems.</p>
+<p class="sub" data-say="">Put simply, CMAAS helps clients answer one question: are our numbers right, and can we report them the way investors and regulators expect, even while the business is changing?</p>
+<div class="split">
+<div class="panel">
+<h3>Capital markets</h3>
+<p class="tag">Helps companies raise money</p>
+<ul data-say="">
+<li>IPO readiness: finding the accounting, controls, and reporting gaps.</li>
+<li>Helping draft the financial sections of the S-1 filing.</li>
+<li>Debt and equity offerings, and answering SEC comment letters.</li>
+</ul>
+</div>
+<div class="panel">
+<h3>Accounting advisory</h3>
+<p class="tag">Solves hard accounting problems around deals and change</p>
+<ul data-say="">
+<li>Carve-out financial statements when a company sells a division.</li>
+<li>Acquisition accounting after one company buys another.</li>
+<li>New or tricky standards, like revenue and lease accounting.</li>
+<li>Accounting input when a company rolls out a new ERP system.</li>
+<li>Financial reporting, internal controls, and fixing restatements.</li>
+</ul>
+</div>
+</div>
+<p class="h-sec">What a first-year actually does</p>
+<ul data-say="" style="margin:8px 0 0;padding-left:1.2em">
+<li><b>Research.</b> Read the accounting rules and help write a memo on how a tricky transaction should be booked.</li>
+<li><b>Schedules.</b> Build the spreadsheets behind adjustments, like moving revenue into the right month.</li>
+<li><b>Gap assessments.</b> Compare a client's close, controls, and policies with what a public company needs, and list the gaps.</li>
+<li><b>Drafting.</b> Help prepare footnotes and financial sections for filings, then tie every number back to support.</li>
+</ul>
+<p class="h-sec">The IPO readiness path, the backbone of many CMAAS projects</p>
+<ol aria-label="Assess, fix, file, report" class="cycle" data-say="">
+<li><b>Assess</b><span>Where are the gaps?</span></li>
+<li><b>Fix</b><span>Policies, people, controls, systems.</span></li>
+<li><b>File</b><span>Audited numbers and the S-1.</span></li>
+<li><b>Report</b><span>Quarterly filings as a public company.</span></li>
+</ol>
+<p class="cycle-note">Most companies start 12 to 24 months before the IPO</p>
+<p class="h-sec">Ten terms to drop naturally</p>
+<div class="vocab">
+<div class="term" data-say=""><b>IPO and S-1</b><p>An IPO is the first time a company sells shares to the public. The S-1 is the registration document it files with the SEC first, including audited financial statements.</p></div>
+<div class="term" data-say=""><b>SEC and PCAOB</b><p>The SEC regulates public companies. The PCAOB sets the audit standards for them, so a pre-IPO audit must meet PCAOB standards.</p></div>
+<div class="term" data-say=""><b>Emerging growth company (EGC)</b><p>A newer company with under about 1.2 billion dollars in yearly revenue. It can show two years of audited financials instead of three, and gets lighter controls rules for up to five years.</p></div>
+<div class="term" data-say=""><b>SOX 404</b><p>The Sarbanes-Oxley rule on internal controls over financial reporting. Management assesses the controls every year, and once a company is large enough, its auditor tests them too.</p></div>
+<div class="term" data-say=""><b>Material weakness</b><p>A gap in controls serious enough that a big error in the financial statements could go uncaught. It has to be disclosed to investors.</p></div>
+<div class="term" data-say=""><b>Segregation of duties</b><p>No one person should both do a task and approve it, like posting a journal entry and approving that same entry.</p></div>
+<div class="term" data-say=""><b>Revenue recognition (ASC 606)</b><p>The rule for when to book revenue: when you deliver what the customer paid for. Cut-off means booking it in the right period.</p></div>
+<div class="term" data-say=""><b>Financial close</b><p>Finalizing the books each month or quarter. Public companies need a fast, reliable close to meet filing deadlines.</p></div>
+<div class="term" data-say=""><b>Restatement</b><p>Reissuing past financial statements because they contained a material error. It's expensive and damages investor trust.</p></div>
+<div class="term" data-say=""><b>Carve-out</b><p>Separate financial statements for one part of a company that's being sold or spun off as its own business.</p></div>
+</div>
 </section>
-
 <!-- 02 PROMPT -->
 <section class="step" id="prompt">
-  <div class="sh"><span class="idx">02</span><h2>The case prompt</h2><button class="btn small listen" type="button">Listen</button></div>
-  <div class="iv">
-    <p class="who">Interviewer</p>
-    <p data-say>Our client is Fernway Pet Co., an online company that ships pet food and supplies to about 1.5 million subscribers. It made about 400 million dollars in revenue last year, and it's growing about 30 percent a year.</p>
-    <p data-say>The board wants to go public in 12 months to raise about 200 million dollars for expansion. Today the books run on small-business accounting software and a lot of spreadsheets. The company is partway through switching to a new ERP, which is one big system that runs accounting, inventory, and orders. And last year, its auditors flagged two serious control problems.</p>
-    <p data-say>The CFO has asked PwC: can Fernway be ready to go public in 12 months, and what should it fix first?</p>
-  </div>
-  <div class="facts">
-    <div><div class="k">Revenue</div><div class="v">$400M</div><div class="d">Growing about 30% a year</div></div>
-    <div><div class="k">IPO target</div><div class="v">12 mo</div><div class="d">To raise about $200M</div></div>
-    <div><div class="k">Finance team</div><div class="v">15</div><div class="d">No public-company experience</div></div>
-    <div><div class="k">Audit findings</div><div class="v">2</div><div class="d">Serious control gaps last year</div></div>
-  </div>
-  <div class="move">
-    <span class="lbl">Your move</span>
-    <p data-say>Restate the question in one sentence before you do anything else.</p>
-    <div class="acts"><button class="btn small timer" type="button" data-secs="20">20s timer</button><button class="btn primary small reveal" type="button" aria-controls="a-prompt" aria-expanded="false">Show a strong answer</button></div>
-  </div>
-  <div class="ans" id="a-prompt" hidden>
-    <p class="who">Strong answer</p>
-    <div class="script"><p data-say>"So the goal is to tell the CFO whether Fernway's accounting, controls, and systems can be ready for an IPO in 12 months, and which gaps to fix first. Is that right?"</p></div>
-    <p class="note" data-say>Interviewer: "Yes, exactly. And the board wants a clear answer." Restating confirms the objective, shows you listened, and buys you a few seconds to think.</p>
-  </div>
+<div class="sh"><span class="idx">02</span><h2>The case prompt</h2><button class="btn small listen" type="button">Listen</button></div>
+<div class="iv">
+<p class="who">Interviewer</p>
+<p data-say="">Our client is Fernway Pet Co., an online company that ships pet food and supplies to about 1.5 million subscribers. Last year it made about 400 million dollars in revenue and about 10 million dollars in profit, and it's growing about 30 percent a year.</p>
+<p data-say="">The board wants to go public in 12 months to raise about 200 million dollars for expansion. Today the books run on small-business accounting software and a lot of spreadsheets. The company is partway through switching to a new ERP, which is one big system that runs accounting, inventory, and orders. And last year, its auditors flagged two serious control problems.</p>
+<p data-say="">The CFO has asked PwC: can Fernway be ready to go public in 12 months, and what should it fix first?</p>
+</div>
+<div class="facts">
+<div><div class="k">Revenue</div><div class="v">$400M</div><div class="d">About $10M profit · growing 30% a year</div></div>
+<div><div class="k">IPO target</div><div class="v">12 mo</div><div class="d">To raise about $200M</div></div>
+<div><div class="k">Finance team</div><div class="v">15</div><div class="d">No public-company experience</div></div>
+<div><div class="k">Audit findings</div><div class="v">2</div><div class="d">Serious control gaps last year</div></div>
+</div>
+<div class="move">
+<span class="lbl">Your move</span>
+<p data-say="">Restate the question in one sentence before you do anything else.</p>
+<div class="acts"><button class="btn small timer" data-secs="20" type="button">20s timer</button><button aria-controls="a-prompt" aria-expanded="false" class="btn primary small reveal" type="button">Show a strong answer</button></div>
+</div>
+<div class="ans" hidden="" id="a-prompt">
+<p class="who">Strong answer</p>
+<div class="script"><p data-say="">"So the goal is to tell the CFO whether Fernway's accounting, controls, and systems can be ready for an IPO in 12 months, and which gaps to fix first. Is that right?"</p></div>
+<p class="note" data-say="">Interviewer: "Yes, exactly. And the board wants a clear answer." Restating confirms the objective, shows you listened, and buys you a few seconds to think.</p>
+</div>
 </section>
-
 <!-- 03 CLARIFY -->
 <section class="step" id="clarify">
-  <div class="sh"><span class="idx">03</span><h2>Clarifying questions</h2><button class="btn small listen" type="button">Listen</button></div>
-  <div class="move">
-    <span class="lbl">Your move</span>
-    <p data-say>Ask two or three clarifying questions. Pick ones whose answers would change your approach.</p>
-    <div class="acts"><button class="btn small timer" type="button" data-secs="60">60s timer</button><button class="btn primary small reveal" type="button" aria-controls="a-clarify" aria-expanded="false">Show strong questions</button></div>
-  </div>
-  <div class="ans" id="a-clarify" hidden>
-    <p class="who">Strong questions, with the interviewer's answers</p>
-    <ul class="qa">
-      <li data-say><div class="q">What does success look like: a yes-or-no on 12 months, or a plan?</div><div class="a">Both. A go or no-go on the 12-month date, and a ranked fix list the board can approve at its meeting in 6 weeks.</div></li>
-      <li data-say><div class="q">What exactly did the auditors flag?</div><div class="a">Two material weaknesses. Subscription revenue was booked before the boxes shipped, and some staff could post and approve their own journal entries.</div></li>
-      <li data-say><div class="q">What are the key dates?</div><div class="a">The new ERP goes live in month 8. The S-1 filing is planned for month 9, and the IPO for month 12.</div></li>
-      <li data-say><div class="q">Who's on the finance team?</div><div class="a">15 people. Nobody has worked at a public company, and the controller quit 3 months ago.</div></li>
-      <li data-say><div class="q">Is there a budget for fixes?</div><div class="a">About 2 million dollars a year for people and fixes, on top of the 4 million dollar ERP project.</div></li>
-      <li data-say><div class="q">How many years of audited financials do we need?</div><div class="a">Fernway qualifies as an emerging growth company, so two years, audited to PCAOB standards.</div></li>
-    </ul>
-    <p class="note" style="margin-top:12px" data-say>Skip questions that don't change your approach, like which pet brands Fernway sells. Two or three sharp questions beat six generic ones.</p>
-  </div>
+<div class="sh"><span class="idx">03</span><h2>Clarifying questions</h2><button class="btn small listen" type="button">Listen</button></div>
+<div class="move">
+<span class="lbl">Your move</span>
+<p data-say="">Ask two or three clarifying questions. Pick ones whose answers would change your approach.</p>
+<div class="acts"><button class="btn small timer" data-secs="60" type="button">60s timer</button><button aria-controls="a-clarify" aria-expanded="false" class="btn primary small reveal" type="button">Show strong questions</button></div>
+</div>
+<div class="ans" hidden="" id="a-clarify">
+<p class="who">Strong questions, with the interviewer's answers</p>
+<ul class="qa">
+<li data-say=""><div class="q">What does success look like: a yes-or-no on 12 months, or a plan?</div><div class="a">Both. A go or no-go on the 12-month date, and a ranked fix list the board can approve at its meeting in 6 weeks.</div></li>
+<li data-say=""><div class="q">What exactly did the auditors flag?</div><div class="a">Two material weaknesses. Subscription revenue was booked before the boxes shipped, and some staff could post and approve their own journal entries.</div></li>
+<li data-say=""><div class="q">What are the key dates?</div><div class="a">The new ERP goes live in month 8. The S-1 filing is planned for month 9, and the IPO for month 12.</div></li>
+<li data-say=""><div class="q">Who's on the finance team?</div><div class="a">15 people. Nobody has worked at a public company, and the controller quit 3 months ago.</div></li>
+<li data-say=""><div class="q">Is there a budget for fixes?</div><div class="a">About 2 million dollars a year for people and fixes, on top of the 4 million dollar ERP project.</div></li>
+<li data-say=""><div class="q">How many years of audited financials do we need?</div><div class="a">Fernway qualifies as an emerging growth company, so two years, audited to PCAOB standards.</div></li>
+</ul>
+<p class="note" data-say="" style="margin-top:12px">Skip questions that don't change your approach, like which pet brands Fernway sells. Two or three sharp questions beat six generic ones.</p>
+</div>
 </section>
-
 <!-- 04 FRAMEWORK -->
 <section class="step" id="framework">
-  <div class="sh"><span class="idx">04</span><h2>Build the framework</h2><button class="btn small listen" type="button">Listen</button></div>
-  <div class="iv">
-    <p class="who">Interviewer</p>
-    <p data-say>Great. How would you structure your approach to this problem?</p>
-  </div>
-  <div class="move">
-    <span class="lbl">Your move</span>
-    <p data-say>Take 60 seconds to sketch three or four buckets, then walk the interviewer through them out loud.</p>
-    <div class="acts"><button class="btn small timer" type="button" data-secs="60">60s timer</button><button class="btn primary small reveal" type="button" aria-controls="a-frame" aria-expanded="false">Show a strong framework</button></div>
-  </div>
-  <div class="ans" id="a-frame" hidden>
-    <p class="who">Strong framework</p>
-    <div class="tree">
-      <div class="root">Can Fernway be IPO-ready in 12 months, and what should it fix first?</div>
-      <div class="branches">
-        <div class="branch"><span class="n">1</span><b>Goal and timeline</b><ul><li>Why go public, and how much money</li><li>Key dates: ERP, S-1 filing, IPO</li><li>Board's tolerance for a delay</li></ul></div>
-        <div class="branch"><span class="n">2</span><b>The numbers</b><ul><li>Two years audited to PCAOB standards</li><li>Revenue recognition and cut-off</li><li>Past errors found and fixed</li></ul></div>
-        <div class="branch"><span class="n">3</span><b>People and controls</b><ul><li>Public-company and SEC skills</li><li>Close speed vs. filing deadlines</li><li>Approvals, access, SOX readiness</li></ul></div>
-        <div class="branch"><span class="n">4</span><b>Systems and plan</b><ul><li>ERP timing and data migration</li><li>Cost of fixes vs. value at risk</li><li>Go or no-go, 90-day plan</li></ul></div>
-      </div>
-    </div>
-    <h3>Say it like this</h3>
-    <div class="script">
-      <p data-say>"I'd break this into four parts. First, the goal and timeline: why Fernway wants to go public, and the key dates between now and the IPO. Second, the numbers themselves: can the last two years pass a PCAOB audit, especially revenue? Third, people and controls: does the team have public-company skills, is the close fast enough, and do the key controls work? Fourth, systems and the plan: is the new ERP timed safely, what do the fixes cost compared with the risk, and is it a go or a no-go? My early guess is that controls and the ERP timing are the biggest risks, so I'd like to start with data on the close and on control testing."</p>
-    </div>
-    <h3>Why it works</h3>
-    <ul data-say>
-      <li>It answers the question that was asked: can Fernway be ready, and what comes first.</li>
-      <li>The buckets don't overlap and they flow: context, numbers, people and controls, then action.</li>
-      <li>It ends with a hypothesis about where to start, which hands the interviewer a natural next step.</li>
-    </ul>
-    <p class="note" data-say>If you blank, "numbers, people, process, systems" works as a backup list. On its own it doesn't answer the 12-month question, so tie it back.</p>
-  </div>
+<div class="sh"><span class="idx">04</span><h2>Build the framework</h2><button class="btn small listen" type="button">Listen</button></div>
+<div class="iv">
+<p class="who">Interviewer</p>
+<p data-say="">Great. How would you structure your approach to this problem?</p>
+</div>
+<div class="move">
+<span class="lbl">Your move</span>
+<p data-say="">Take 60 seconds to sketch three or four buckets, then walk the interviewer through them out loud.</p>
+<div class="acts"><button class="btn small timer" data-secs="60" type="button">60s timer</button><button aria-controls="a-frame" aria-expanded="false" class="btn primary small reveal" type="button">Show a strong framework</button></div>
+</div>
+<div class="ans" hidden="" id="a-frame">
+<p class="who">Strong framework</p>
+<div class="tree">
+<div class="root">Can Fernway be IPO-ready in 12 months, and what should it fix first?</div>
+<div class="branches">
+<div class="branch"><span class="n">1</span><b>Goal and timeline</b><ul><li>Why go public, and how much money</li><li>Key dates: ERP, S-1 filing, IPO</li><li>Board's tolerance for a delay</li></ul></div>
+<div class="branch"><span class="n">2</span><b>The numbers</b><ul><li>Two years audited to PCAOB standards</li><li>Revenue recognition and cut-off</li><li>Past errors found and fixed</li></ul></div>
+<div class="branch"><span class="n">3</span><b>People and controls</b><ul><li>Public-company and SEC skills</li><li>Close speed vs. filing deadlines</li><li>Approvals, access, SOX readiness</li></ul></div>
+<div class="branch"><span class="n">4</span><b>Systems and plan</b><ul><li>ERP timing and data migration</li><li>Cost of fixes vs. value at risk</li><li>Go or no-go, 90-day plan</li></ul></div>
+</div>
+</div>
+<h3>Say it like this</h3>
+<div class="script">
+<p data-say="">"I'd break this into four parts. First, the goal and timeline: why Fernway wants to go public, and the key dates between now and the IPO. Second, the numbers themselves: can the last two years pass a PCAOB audit, especially revenue? Third, people and controls: does the team have public-company skills, is the close fast enough, and do the key controls work? Fourth, systems and the plan: is the new ERP timed safely, what do the fixes cost compared with the risk, and is it a go or a no-go? My early guess is that controls and the ERP timing are the biggest risks, so I'd like to start with data on the close and on control testing."</p>
+</div>
+<h3>Why it works</h3>
+<ul data-say="">
+<li>It answers the question that was asked: can Fernway be ready, and what comes first.</li>
+<li>The buckets don't overlap and they flow: context, numbers, people and controls, then action.</li>
+<li>It ends with a hypothesis about where to start, which hands the interviewer a natural next step.</li>
+</ul>
+<p class="note" data-say="">If you blank, "numbers, people, process, systems" works as a backup list. On its own it doesn't answer the 12-month question, so tie it back.</p>
+</div>
 </section>
-
 <!-- 05 EXHIBIT 1 -->
 <section class="step" id="ex1">
-  <div class="sh"><span class="idx">05</span><h2>Exhibit 1: the finance team under strain</h2><button class="btn small listen" type="button">Listen</button></div>
-  <div class="iv">
-    <p class="who">Interviewer</p>
-    <p data-say>Good place to start. The CFO shared six quarters of finance data. Take a look. What stands out to you?</p>
-  </div>
-  <figure class="ex">
-    <div class="ex-h"><span class="ex-t">Finance operations, last six quarters</span><span class="ex-ref">Exhibit 1 · WP-CLOSE-01</span></div>
-    <p class="ex-s">Per quarter, Q2 2025 to Q3 2026. Each panel has its own scale, starting at zero.</p>
-    <div class="multiples" id="mult"></div>
-    <div class="row" style="margin-top:12px"><button class="btn small reveal" type="button" aria-controls="t-ex1" aria-expanded="false">Show as table</button></div>
-    <div class="tblwrap" id="t-ex1" hidden></div>
-    <figcaption>Source: Fernway finance team records (case data).</figcaption>
-  </figure>
-
-  <div class="mc" data-answer="1">
-    <div class="mc-head"><p class="stem" data-say>Which finding should you lead with?</p></div>
-    <div class="opts">
-      <button class="opt" type="button" data-say>Revenue is growing fast, so the finance team is keeping up.</button>
-      <button class="opt" type="button" data-say>Errors found after the close almost quadrupled and the close got 9 days slower, while the team stayed at 15 people.</button>
-      <button class="opt" type="button" data-say>Manual journal entries are the biggest number, so they're the main problem.</button>
-      <button class="opt" type="button" data-say>Bank reconciliation exceptions are rising, so cash is at risk.</button>
-    </div>
-    <div class="why" hidden>
-      <p data-say>Revenue grew about 40 percent over six quarters, but the finance team didn't grow at all. Manual journal entries more than doubled, from 900 to 2,000. Errors found after the books closed went from 4 to 15, and the close slowed from 16 days to 25. Bank reconciliation exceptions stayed flat at 2 or 3, so the cash basics are fine. The process isn't scaling, and a public company needs to close in about 10 days to file on time.</p>
-    </div>
-  </div>
-
-  <div class="move">
-    <span class="lbl">Then</span>
-    <p data-say>Say the insight out loud, tie it to the IPO, and ask for the next piece of data.</p>
-    <div class="acts"><button class="btn primary small reveal" type="button" aria-controls="a-ex1" aria-expanded="false">Show how to say it</button></div>
-  </div>
-  <div class="ans" id="a-ex1" hidden>
-    <p class="who">Say it like this</p>
-    <div class="script"><p data-say>"Two things stand out. Revenue grew about 40 percent, but the finance team stayed at 15 people, so the process is stretched. You can see it in the results: errors found after the close almost quadrupled, and the close slowed from 16 days to 25. A public company needs to close in about 10 days to file on time, so this matters for the IPO date. I'd want to know which controls are breaking. Do we have any control testing results?"</p></div>
-    <p class="note" data-say>Notice the pattern: insight, then so-what for the client, then a hypothesis-driven ask. That ask leads the interviewer to Exhibit 2.</p>
-  </div>
+<div class="sh"><span class="idx">05</span><h2>Exhibit 1: the finance team under strain</h2><button class="btn small listen" type="button">Listen</button></div>
+<div class="iv">
+<p class="who">Interviewer</p>
+<p data-say="">Good place to start. The CFO shared six quarters of finance data. Take a look. What stands out to you?</p>
+</div>
+<figure class="ex">
+<div class="ex-h"><span class="ex-t">Finance operations, last six quarters</span><span class="ex-ref">Exhibit 1 · WP-CLOSE-01</span></div>
+<p class="ex-s">Per quarter, Q2 2025 to Q3 2026. Each panel has its own scale, starting at zero.</p>
+<div class="multiples" id="mult"></div>
+<div class="row" style="margin-top:12px"><button aria-controls="t-ex1" aria-expanded="false" class="btn small reveal" type="button">Show as table</button></div>
+<div class="tblwrap" hidden="" id="t-ex1"></div>
+<figcaption>Source: Fernway finance team records (case data).</figcaption>
+</figure>
+<div class="mc" data-answer="1">
+<div class="mc-head"><p class="stem" data-say="">Which finding should you lead with?</p></div>
+<div class="opts">
+<button class="opt" data-say="" type="button">Revenue is growing fast, so the finance team is keeping up.</button>
+<button class="opt" data-say="" type="button">Errors found after the close almost quadrupled and the close got 9 days slower, while the team stayed at 15 people.</button>
+<button class="opt" data-say="" type="button">Manual journal entries are the biggest number, so they're the main problem.</button>
+<button class="opt" data-say="" type="button">Bank reconciliation exceptions are rising, so cash is at risk.</button>
+</div>
+<div class="why" hidden="">
+<p data-say="">Revenue grew about 40 percent over six quarters, but the finance team didn't grow at all. Manual journal entries more than doubled, from 900 to 2,000. Errors found after the books closed went from 4 to 15, and the close slowed from 16 days to 25. Bank reconciliation exceptions stayed flat at 2 or 3, so the cash basics are fine. The process isn't scaling, and a public company needs to close in about 10 days to file on time.</p>
+</div>
+</div>
+<div class="move">
+<span class="lbl">Then</span>
+<p data-say="">Say the insight out loud, tie it to the IPO, and ask for the next piece of data.</p>
+<div class="acts"><button aria-controls="a-ex1" aria-expanded="false" class="btn primary small reveal" type="button">Show how to say it</button></div>
+</div>
+<div class="ans" hidden="" id="a-ex1">
+<p class="who">Say it like this</p>
+<div class="script"><p data-say="">"Two things stand out. Revenue grew about 40 percent, but the finance team stayed at 15 people, so the process is stretched. You can see it in the results: errors found after the close almost quadrupled, and the close slowed from 16 days to 25. A public company needs to close in about 10 days to file on time, so this matters for the IPO date. I'd want to know which controls are breaking. Do we have any control testing results?"</p></div>
+<p class="note" data-say="">Notice the pattern: insight, then so-what for the client, then a hypothesis-driven ask. That ask leads the interviewer to Exhibit 2.</p>
+</div>
 </section>
-
 <!-- 06 EXHIBIT 2 -->
 <section class="step" id="ex2">
-  <div class="sh"><span class="idx">06</span><h2>Exhibit 2: readiness control testing</h2><button class="btn small listen" type="button">Listen</button></div>
-  <div class="iv">
-    <p class="who">Interviewer</p>
-    <p data-say>Good instinct. Our PwC team tested Fernway's key financial controls last month as part of a readiness review. Here are the results. What's your read?</p>
-  </div>
-  <figure class="ex">
-    <div class="ex-h"><span class="ex-t">Control test results: exception rate by control</span><span class="ex-ref">Exhibit 2 · WP-ICFR-03</span></div>
-    <p class="ex-s">Share of sampled items where the control failed. The readiness tolerance is 5%.</p>
-    <div class="hbar" id="ctl"></div>
-    <p class="tolnote">Also noted: nobody has reviewed who can access the accounting system in the last 4 quarters.</p>
-    <figcaption>Source: PwC readiness testing, sampled items (case data).</figcaption>
-  </figure>
-
-  <div class="mc" data-answer="2">
-    <div class="mc-head"><p class="stem" data-say>What's the so-what?</p></div>
-    <div class="opts">
-      <button class="opt" type="button" data-say>Inventory is the riskiest area.</button>
-      <button class="opt" type="button" data-say>Exception rates under 30 percent are normal for a private company, so no action is needed.</button>
-      <button class="opt" type="button" data-say>Revenue and approval controls fail about one time in four, the same two areas the auditors flagged last year. They must be fixed and retested before filing.</button>
-      <button class="opt" type="button" data-say>Fernway should hire more warehouse staff.</button>
-    </div>
-    <div class="why" hidden>
-      <p data-say>Connect the exhibits. Journal entries with no second approval and late reconciliations explain why errors keep surfacing after the close. Revenue cut-off failures mean revenue lands in the wrong month, and revenue is the number investors care about most. These are the same two material weaknesses from last year, so they're still open. Cash and inventory basics look fine.</p>
-    </div>
-  </div>
-
-  <div class="move">
-    <span class="lbl">Then</span>
-    <p data-say>Synthesize both exhibits in three sentences.</p>
-    <div class="acts"><button class="btn primary small reveal" type="button" aria-controls="a-ex2" aria-expanded="false">Show how to say it</button></div>
-  </div>
-  <div class="ans" id="a-ex2" hidden>
-    <p class="who">Say it like this</p>
-    <div class="script"><p data-say>"Revenue cut-off and journal entry approvals fail about one time in four, far above the 5 percent tolerance, and nobody reviews system access. That explains why Exhibit 1 shows errors piling up after the close. These are the same two material weaknesses the auditors flagged last year, and with the ERP going live a month before filing, I'd make fixing and retesting them a must-do before the S-1."</p></div>
-  </div>
+<div class="sh"><span class="idx">06</span><h2>Exhibit 2: readiness control testing</h2><button class="btn small listen" type="button">Listen</button></div>
+<div class="iv">
+<p class="who">Interviewer</p>
+<p data-say="">Good instinct. Our PwC team tested Fernway's key financial controls last month as part of a readiness review. Here are the results. What's your read?</p>
+</div>
+<figure class="ex">
+<div class="ex-h"><span class="ex-t">Control test results: exception rate by control</span><span class="ex-ref">Exhibit 2 · WP-ICFR-03</span></div>
+<p class="ex-s">Share of sampled items where the control failed. The readiness tolerance is 5%.</p>
+<div class="hbar" id="ctl"></div>
+<p class="tolnote">Also noted: nobody has reviewed who can access the accounting system in the last 4 quarters.</p>
+<figcaption>Source: PwC readiness testing, sampled items (case data).</figcaption>
+</figure>
+<div class="mc" data-answer="2">
+<div class="mc-head"><p class="stem" data-say="">What's the so-what?</p></div>
+<div class="opts">
+<button class="opt" data-say="" type="button">Inventory is the riskiest area.</button>
+<button class="opt" data-say="" type="button">Exception rates under 30 percent are normal for a private company, so no action is needed.</button>
+<button class="opt" data-say="" type="button">Revenue and approval controls fail about one time in four, the same two areas the auditors flagged last year. They must be fixed and retested before filing.</button>
+<button class="opt" data-say="" type="button">Fernway should hire more warehouse staff.</button>
+</div>
+<div class="why" hidden="">
+<p data-say="">Connect the exhibits. Journal entries with no second approval and late reconciliations explain why errors keep surfacing after the close. Revenue cut-off failures mean revenue lands in the wrong month, and revenue is the number investors care about most. These are the same two material weaknesses from last year, so they're still open. Cash and inventory basics look fine.</p>
+</div>
+</div>
+<div class="move">
+<span class="lbl">Then</span>
+<p data-say="">Synthesize both exhibits in three sentences.</p>
+<div class="acts"><button aria-controls="a-ex2" aria-expanded="false" class="btn primary small reveal" type="button">Show how to say it</button></div>
+</div>
+<div class="ans" hidden="" id="a-ex2">
+<p class="who">Say it like this</p>
+<div class="script"><p data-say="">"Revenue cut-off and journal entry approvals fail about one time in four, far above the 5 percent tolerance, and nobody reviews system access. That explains why Exhibit 1 shows errors piling up after the close. These are the same two material weaknesses the auditors flagged last year, and with the ERP going live a month before filing, I'd make fixing and retesting them a must-do before the S-1."</p></div>
+</div>
 </section>
-
 <!-- 07 SIZING -->
 <section class="step" id="sizing">
-  <div class="sh"><span class="idx">07</span><h2>Risk sizing: put a dollar figure on it</h2><button class="btn small listen" type="button">Listen</button></div>
-  <p class="sub" data-say>This is the CMAAS version of market sizing. Same skills: state the formula, make clear assumptions, do clean math, then sanity-check.</p>
-  <div class="iv">
-    <p class="who">Interviewer</p>
-    <p data-say>The CFO wants a number. Estimate what it would cost if Fernway had to restate its financials after the IPO, and tell me whether a 2 million dollar a year fix program is worth it.</p>
-  </div>
-  <div class="given">
-    <div><div class="k">Lawsuits and settlements*</div><div class="v">$25M</div></div>
-    <div><div class="k">Extra audit and advisor fees</div><div class="v">$10M</div></div>
-    <div><div class="k">SEC penalties</div><div class="v">$5M</div></div>
-    <div><div class="k">Chance of a restatement per year, today</div><div class="v">20%</div></div>
-    <div><div class="k">Chance per year with the program</div><div class="v">5%</div></div>
-    <div><div class="k">Program cost per year</div><div class="v">$2M</div></div>
-  </div>
-  <p class="src">*Case assumptions. A real restatement can also knock down the share price, which isn't counted here.</p>
-  <div class="move">
-    <span class="lbl">Your move</span>
-    <p data-say>Say the formula before you calculate: expected annual loss equals the cost of one restatement times the chance it happens in a year.</p>
-    <div class="acts"><button class="btn small timer" type="button" data-secs="90">90s timer</button></div>
-  </div>
-  <div class="stepper" style="margin-top:14px">
-    <ol class="calc">
-      <li class="st" hidden data-say="Step 1. Cost of one restatement. 25 million plus 10 million plus 5 million equals 40 million dollars."><span class="t">1 · Cost of one restatement</span><span class="f">$25M + $10M + $5M</span><span class="r tnum">$40M</span></li>
-      <li class="st" hidden data-say="Step 2. Expected loss per year today. 40 million times 20 percent equals 8 million dollars a year."><span class="t">2 · Expected loss per year, today</span><span class="f">$40M × 20%</span><span class="r tnum">$8M</span></li>
-      <li class="st" hidden data-say="Step 3. Expected loss per year with the program. 40 million times 5 percent equals 2 million dollars a year."><span class="t">3 · Expected loss per year, with the program</span><span class="f">$40M × 5%</span><span class="r tnum">$2M</span></li>
-      <li class="st" hidden data-say="Step 4. Value of the program. 8 million minus 2 million is 6 million in reduced losses, against a 2 million dollar cost. Net benefit is about 4 million dollars a year, or about 3 dollars of risk reduced for every dollar spent."><span class="t">4 · Value of the program</span><span class="f">$6M less expected loss − $2M cost</span><span class="r tnum">+$4M / yr</span></li>
-      <li class="st" hidden data-say="Step 5. Break-even check. 2 million divided by 40 million is 5 percentage points. So the program pays for itself as long as it cuts the yearly odds from 20 percent to 15 percent or lower."><span class="t">5 · Break-even check</span><span class="f">$2M ÷ $40M = 5 points. Pays off if the odds fall from 20% to 15% or lower</span><span class="r tnum">5 pts</span></li>
-      <li class="st" hidden data-say="Step 6. Sanity check. 40 million is five years of Fernway's current profit of 8 million a year, and it doesn't count any drop in the share price. So the real exposure is probably bigger."><span class="t">6 · Sanity check</span><span class="f">$40M = five years of Fernway's $8M yearly profit, before any share price drop</span><span class="r tnum">✓</span></li>
-    </ol>
-    <div class="row"><button class="btn primary small next" type="button">Reveal step 1 of 6</button><button class="btn small reset" type="button">Start over</button></div>
-  </div>
-
-  <figure class="ex">
-    <div class="ex-h"><span class="ex-t">Annual cost: do nothing vs. invest</span><span class="ex-ref">Risk sizing · $ millions per year</span></div>
-    <div class="legend"><span><i style="background:var(--s1)"></i>Expected restatement loss</span><span><i style="background:var(--s2)"></i>Fix program cost</span></div>
-    <div class="hbar" id="roi"></div>
-    <figcaption>Investing costs $4M a year in total vs. $8M of expected loss: about $4M a year better off.</figcaption>
-  </figure>
-
-  <div class="mc" data-answer="2">
-    <div class="mc-head"><p class="stem" data-say>Quick check: what's the expected annual loss today?</p></div>
-    <div class="opts">
-      <button class="opt" type="button" data-say>800 thousand dollars</button>
-      <button class="opt" type="button" data-say>40 million dollars</button>
-      <button class="opt" type="button" data-say>8 million dollars</button>
-      <button class="opt" type="button" data-say>10 million dollars</button>
-    </div>
-    <div class="why" hidden><p data-say>40 million dollars of impact times a 20 percent chance per year is 8 million dollars a year. 40 million is the cost of one restatement, not the expected annual loss. Everyday version: if a 40 dollar umbrella has a 1 in 5 chance of getting lost each year, you expect to lose about 8 dollars a year.</p></div>
-  </div>
-
-  <div class="chipset" aria-label="Vocabulary">
-    <span><b>Impact</b> of one restatement = $40M</span>
-    <span><b>Chance</b> per year = 20%</span>
-    <span><b>Expected annual loss</b> = impact × chance = $8M</span>
-  </div>
-  <div class="move">
-    <span class="lbl">Then</span>
-    <p data-say>Summarize the math in two sentences, and add one sanity check.</p>
-    <div class="acts"><button class="btn primary small reveal" type="button" aria-controls="a-size" aria-expanded="false">Show how to say it</button></div>
-  </div>
-  <div class="ans" id="a-size" hidden>
-    <p class="who">Say it like this</p>
-    <div class="script"><p data-say>"A restatement after the IPO would cost about 40 million dollars, which is about 8 million a year in expected losses at today's odds. The 2 million dollar program cuts that to about 2 million, so it saves 6 million for a cost of 2. It breaks even as long as it cuts the odds by 5 points, and 40 million is five years of Fernway's profit, before any hit to the share price."</p></div>
-    <p class="note" data-say>If the interviewer pushes back that 2 million dollars is a quarter of Fernway's profit: "One restatement would wipe out five years of profit. And without these fixes, the auditors may not be able to sign off in time, which delays the IPO anyway."</p>
-  </div>
+<div class="sh"><span class="idx">07</span><h2>Risk sizing: put a dollar figure on it</h2><button class="btn small listen" type="button">Listen</button></div>
+<p class="sub" data-say="">This is the CMAAS version of market sizing. Same skills: state the formula, make clear assumptions, do clean math, then sanity-check.</p>
+<div class="iv">
+<p class="who">Interviewer</p>
+<p data-say="">The CFO wants a number. Estimate what it would cost if Fernway had to restate its financials after the IPO, and tell me whether a 2 million dollar a year fix program is worth it.</p>
+</div>
+<div class="given">
+<div><div class="k">If it happens: lawsuits and settlements*</div><div class="v">$25M</div></div>
+<div><div class="k">If it happens: extra audit and advisor fees</div><div class="v">$10M</div></div>
+<div><div class="k">If it happens: SEC penalties</div><div class="v">$5M</div></div>
+<div><div class="k">Chance of a restatement per year, today</div><div class="v">20%</div></div>
+<div><div class="k">Chance per year with the program</div><div class="v">5%</div></div>
+<div><div class="k">Program cost per year</div><div class="v">$2M</div></div>
+</div>
+<p class="src">*Case assumptions. A real restatement can also knock down the share price, which isn't counted here. For scale, Fernway made about $10M in profit last year (from the case prompt).</p>
+<div class="move">
+<span class="lbl">Your move</span>
+<p data-say="">Say the formula before you calculate: expected loss per year equals the cost if it happens once, times the chance it happens in a year.</p>
+<div class="acts"><button class="btn small timer" data-secs="90" type="button">90s timer</button><button aria-controls="h-size" aria-expanded="false" class="btn small reveal" type="button">Show hint</button></div>
+</div>
+<div class="ans" hidden="" id="h-size">
+<p class="who">Hint: expected loss</p>
+<p data-say="">A restatement probably won't happen in any one year. A 20 percent chance a year means it happens about once every five years. So spread the cost of one restatement over five years to get an average cost per year. That yearly average is the expected loss. Dividing by 5 is the same as multiplying by 20 percent.</p>
+</div>
+<div class="stepper" style="margin-top:14px">
+<ol class="calc">
+<li class="st" data-say="Step 1. Add up what one restatement would cost. 25 million in lawsuits, plus 10 million in extra fees, plus 5 million in penalties, is 40 million dollars." hidden=""><span class="t">1 · Cost if it happens once</span><span class="f">$25M lawsuits + $10M fees + $5M penalties</span><span class="r tnum">$40M</span></li>
+<li class="st" data-say="Step 2. Average cost per year today. A 20 percent chance a year is about once every five years. 40 million spread over five years is 8 million a year. That's the same as 40 million times 20 percent." hidden=""><span class="t">2 · Average cost per year, today</span><span class="f">About once every 5 years: $40M ÷ 5, same as $40M × 20%</span><span class="r tnum">$8M</span></li>
+<li class="st" data-say="Step 3. Average cost per year with the program. The chance drops to 5 percent, about once every 20 years. 40 million divided by 20 is 2 million a year." hidden=""><span class="t">3 · Average cost per year, with the program</span><span class="f">About once every 20 years: $40M ÷ 20, same as $40M × 5%</span><span class="r tnum">$2M</span></li>
+<li class="st" data-say="Step 4. Is the program worth it? It lowers the average yearly cost from 8 million to 2 million, a saving of 6 million a year. It costs 2 million a year. So Fernway comes out about 4 million a year ahead, or about 3 dollars saved for every dollar spent." hidden=""><span class="t">4 · Is the program worth it?</span><span class="f">Saves $8M − $2M = $6M a year, costs $2M a year</span><span class="r tnum">+$4M / yr</span></li>
+<li class="st" data-say="Step 5. Break-even. How well does the program need to work just to pay for itself? Each 1 point off the odds saves 40 million times 1 percent, or 400 thousand dollars a year. The program costs 2 million, so it needs to cut the odds by 5 points, from 20 percent to 15 percent. It's expected to get them to 5 percent, so there's plenty of room." hidden=""><span class="t">5 · Break-even</span><span class="f">Each 1 point off the odds saves $40M × 1% = $0.4M a year. $2M ÷ $0.4M = 5 points, so 20% → 15% covers the cost</span><span class="r tnum">5 pts</span></li>
+<li class="st" data-say="Step 6. Sanity check. Fernway makes about 10 million dollars a year in profit. So one 40 million dollar restatement would wipe out four years of profit, and that's before any drop in the share price." hidden=""><span class="t">6 · Sanity check</span><span class="f">$40M ÷ $10M profit a year = four years of profit, before any share price drop</span><span class="r tnum">✓</span></li>
+</ol>
+<div class="row"><button class="btn primary small next" type="button">Reveal step 1 of 6</button><button class="btn small reset" type="button">Start over</button></div>
+</div>
+<figure class="ex">
+<div class="ex-h"><span class="ex-t">Annual cost: do nothing vs. invest</span><span class="ex-ref">Risk sizing · $ millions per year</span></div>
+<div class="legend"><span><i style="background:var(--s1)"></i>Expected loss (average restatement cost per year)</span><span><i style="background:var(--s2)"></i>Fix program cost</span></div>
+<div class="hbar" id="roi"></div>
+<figcaption>Do nothing: $8M a year on average. Invest: $2M of expected loss plus the $2M program, or $4M a year. Investing leaves Fernway about $4M a year better off.</figcaption>
+</figure>
+<div class="mc" data-answer="2">
+<div class="mc-head"><p class="stem" data-say="">Quick check: what's the expected annual loss today?</p></div>
+<div class="opts">
+<button class="opt" data-say="" type="button">800 thousand dollars</button>
+<button class="opt" data-say="" type="button">40 million dollars</button>
+<button class="opt" data-say="" type="button">8 million dollars</button>
+<button class="opt" data-say="" type="button">10 million dollars</button>
+</div>
+<div class="why" hidden=""><p data-say="">40 million dollars of impact times a 20 percent chance per year is 8 million dollars a year. 40 million is the cost of one restatement, not the expected annual loss. Everyday version: if a 40 dollar umbrella has a 1 in 5 chance of getting lost each year, you'll lose one about every five years, which averages out to 8 dollars a year.</p></div>
+</div>
+<div aria-label="Vocabulary" class="chipset">
+<span><b>Impact</b> of one restatement = $40M</span>
+<span><b>Chance</b> per year = 20%</span>
+<span><b>Expected annual loss</b> = impact × chance = $8M a year on average</span>
+</div>
+<div class="move">
+<span class="lbl">Then</span>
+<p data-say="">Summarize the math out loud, and add one sanity check.</p>
+<div class="acts"><button aria-controls="a-size" aria-expanded="false" class="btn primary small reveal" type="button">Show how to say it</button></div>
+</div>
+<div class="ans" hidden="" id="a-size">
+<p class="who">Say it like this</p>
+<div class="script"><p data-say="">"One restatement would cost about 40 million dollars: 25 in lawsuits, 10 in extra fees, and 5 in penalties. At a 20 percent chance a year, that's about once every five years, so it costs Fernway about 8 million a year on average."</p><p data-say="">"The 2 million dollar program cuts the chance to 5 percent, which brings the average down to 2 million a year. So Fernway spends 2 million to save 6 million, and comes out about 4 million a year ahead."</p><p data-say="">"Sanity check: Fernway makes about 10 million a year in profit, so one restatement would wipe out four years of it, before any drop in the share price."</p></div>
+<p class="note" data-say="">If the interviewer pushes back that 2 million dollars a year is a fifth of Fernway's profit: "It is, but one restatement would wipe out four years of profit. And without these fixes, the auditors may not be able to sign off in time, which delays the IPO anyway."</p>
+</div>
 </section>
-
 <!-- 08 PRIORITIZE -->
 <section class="step" id="prioritize">
-  <div class="sh"><span class="idx">08</span><h2>Score and prioritize on a heat map</h2><button class="btn small listen" type="button">Listen</button></div>
-  <div class="iv">
-    <p class="who">Interviewer</p>
-    <p data-say>Here's the team's risk register. Score each risk for likelihood and impact, from 1 to 5, with one reason for each. If Fernway can only tackle three things in the next 90 days, which three, and why?</p>
-  </div>
-  <figure class="ex">
-    <div class="ex-h"><span class="ex-t">Risk heat map: likelihood × impact</span><span class="ex-ref">Exhibit 3 · Risk register</span></div>
-    <div class="seg" role="group" aria-label="Which scores to plot">
-      <button class="btn small" type="button" id="mMine" aria-pressed="true">Your scores</button>
-      <button class="btn small" type="button" id="mTeam" aria-pressed="false" disabled>Team's scores</button>
-    </div>
-    <div class="heat">
-      <div>
-        <div id="heatmap"></div>
-        <p class="mapnote" id="mapnote">Your dots appear here as you score each risk.</p>
-      </div>
-      <div>
-        <p class="mapnote" style="margin:0 0 6px">Pick L (likelihood) and I (impact): 1 is low, 5 is high.</p>
-        <ul class="reg scorer" id="scorer"></ul>
-        <p class="mytop" id="mytop" aria-live="polite">Score all six to see your top three.</p>
-        <div class="ramp" aria-hidden="true">Score <i style="background:var(--h1)"></i><i style="background:var(--h2)"></i><i style="background:var(--h3)"></i><i style="background:var(--h4)"></i><i style="background:var(--h5)"></i> higher</div>
-      </div>
-    </div>
-    <figcaption>Score = likelihood × impact. Risks are from the case data; scores are yours to set.</figcaption>
-  </figure>
-
-  <div class="move">
-    <span class="lbl">Your move</span>
-    <p data-say>Score each risk out loud with a one-line reason, then name your top three.</p>
-    <div class="acts"><button class="btn small timer" type="button" data-secs="120">2 min timer</button><button class="btn primary small reveal" type="button" id="rv-prio" aria-controls="a-prio" aria-expanded="false">Show the team's scores</button></div>
-  </div>
-  <div class="ans" id="a-prio" hidden>
-    <p class="who">The team's scores, with reasons</p>
-    <ul class="reg" id="teamlist"></ul>
-    <h3>Say it like this</h3>
-    <div class="script"><p data-say>"I'd fix three things first. Revenue cut-off, because it fails one time in four and revenue is what investors watch most. Approvals and access, because that's the other open material weakness. And the ERP timing, because a go-live one month before filing could leave us with no clean numbers to file. The slow close scores high too, but fixing staffing, approvals, and the system is what speeds it up."</p></div>
-  </div>
-
-  <div class="mc" data-answer="0">
-    <div class="mc-head"><p class="stem" data-say>Which three come first?</p></div>
-    <div class="opts">
-      <button class="opt" type="button" data-say>R1, R2, and R3: revenue cut-off, approvals and access, and the ERP go-live timing.</button>
-      <button class="opt" type="button" data-say>R4, R5, and R6: close speed, team skills, and inventory.</button>
-      <button class="opt" type="button" data-say>R1, R4, and R6.</button>
-      <button class="opt" type="button" data-say>All six at once, with equal effort.</button>
-    </div>
-    <div class="why" hidden>
-      <p data-say>R1 and R2 score highest, and they're backed by evidence: failed tests in Exhibit 2 and the same material weaknesses as last year. R3 is high impact, and its timing is fully in Fernway's control, so move the go-live. R4, the slow close, scores high too, but it's mostly a symptom that improves as you fix approvals, the system, and staffing. R5 is part of the fix: hire. R6 is low on both.</p>
-    </div>
-  </div>
+<div class="sh"><span class="idx">08</span><h2>Score and prioritize on a heat map</h2><button class="btn small listen" type="button">Listen</button></div>
+<div class="iv">
+<p class="who">Interviewer</p>
+<p data-say="">Here's the team's risk register. Score each risk for likelihood and impact, from 1 to 5, with one reason for each. If Fernway can only tackle three things in the next 90 days, which three, and why?</p>
+</div>
+<figure class="ex">
+<div class="ex-h"><span class="ex-t">Risk heat map: likelihood × impact</span><span class="ex-ref">Exhibit 3 · Risk register</span></div>
+<div aria-label="Which scores to plot" class="seg" role="group">
+<button aria-pressed="true" class="btn small" id="mMine" type="button">Your scores</button>
+<button aria-pressed="false" class="btn small" disabled="" id="mTeam" type="button">Team's scores</button>
+</div>
+<div class="heat">
+<div>
+<div id="heatmap"></div>
+<p class="mapnote" id="mapnote">Your dots appear here as you score each risk.</p>
+</div>
+<div>
+<p class="mapnote" style="margin:0 0 6px">Pick L (likelihood) and I (impact): 1 is low, 5 is high.</p>
+<ul class="reg scorer" id="scorer"></ul>
+<p aria-live="polite" class="mytop" id="mytop">Score all six to see your top three.</p>
+<div aria-hidden="true" class="ramp">Score <i style="background:var(--h1)"></i><i style="background:var(--h2)"></i><i style="background:var(--h3)"></i><i style="background:var(--h4)"></i><i style="background:var(--h5)"></i> higher</div>
+</div>
+</div>
+<figcaption>Score = likelihood × impact. Risks are from the case data; scores are yours to set.</figcaption>
+</figure>
+<div class="move">
+<span class="lbl">Your move</span>
+<p data-say="">Score each risk out loud with a one-line reason, then name your top three.</p>
+<div class="acts"><button class="btn small timer" data-secs="120" type="button">2 min timer</button><button aria-controls="a-prio" aria-expanded="false" class="btn primary small reveal" id="rv-prio" type="button">Show the team's scores</button></div>
+</div>
+<div class="ans" hidden="" id="a-prio">
+<p class="who">The team's scores, with reasons</p>
+<ul class="reg" id="teamlist"></ul>
+<h3>Say it like this</h3>
+<div class="script"><p data-say="">"I'd fix three things first. Revenue cut-off, because it fails one time in four and revenue is what investors watch most. Approvals and access, because that's the other open material weakness. And the ERP timing, because a go-live one month before filing could leave us with no clean numbers to file. The slow close scores high too, but fixing staffing, approvals, and the system is what speeds it up."</p></div>
+</div>
+<div class="mc" data-answer="0">
+<div class="mc-head"><p class="stem" data-say="">Which three come first?</p></div>
+<div class="opts">
+<button class="opt" data-say="" type="button">R1, R2, and R3: revenue cut-off, approvals and access, and the ERP go-live timing.</button>
+<button class="opt" data-say="" type="button">R4, R5, and R6: close speed, team skills, and inventory.</button>
+<button class="opt" data-say="" type="button">R1, R4, and R6.</button>
+<button class="opt" data-say="" type="button">All six at once, with equal effort.</button>
+</div>
+<div class="why" hidden="">
+<p data-say="">R1 and R2 score highest, and they're backed by evidence: failed tests in Exhibit 2 and the same material weaknesses as last year. R3 is high impact, and its timing is fully in Fernway's control, so move the go-live. R4, the slow close, scores high too, but it's mostly a symptom that improves as you fix approvals, the system, and staffing. R5 is part of the fix: hire. R6 is low on both.</p>
+</div>
+</div>
 </section>
-
 <!-- 09 RECOMMEND -->
 <section class="step" id="recommend">
-  <div class="sh"><span class="idx">09</span><h2>The recommendation</h2><button class="btn small listen" type="button">Listen</button></div>
-  <div class="iv">
-    <p class="who">Interviewer</p>
-    <p data-say>The CFO just walked in. You have 60 seconds. What's your recommendation?</p>
-  </div>
-  <div class="move">
-    <span class="lbl">Your move</span>
-    <p data-say>Lead with the answer. Then three reasons, the main risk, and next steps.</p>
-    <div class="acts"><button class="btn small timer" type="button" data-secs="60">60s timer</button><button class="btn primary small reveal" type="button" aria-controls="a-rec" aria-expanded="false">Show a strong answer</button></div>
-  </div>
-  <div class="ans" id="a-rec" hidden>
-    <p class="who">Strong answer</p>
-    <div class="struct"><span>Answer</span><span>3 reasons</span><span>Risk</span><span>Next steps</span></div>
-    <div class="script">
-      <p data-say>"Fernway can go public, but not safely in 12 months on the current plan. I recommend moving the target to about 15 months, and filing the S-1 only after three gaps are fixed and retested."</p>
-      <p data-say>"First, revenue. One in four sampled orders was booked in the wrong month. Revenue is the number investors watch most, and a restatement would cost about 40 million dollars, which is five years of profit."</p>
-      <p data-say>"Second, approvals and access. 30 percent of journal entries had no second approval, and nobody reviews who can get into the accounting system. These are the same two material weaknesses the auditors flagged last year."</p>
-      <p data-say>"Third, timing. The ERP goes live one month before filing, and the close already takes 25 days and is getting slower. Move the go-live earlier, so Fernway runs at least one full quarter-end close on the new system before it files."</p>
-      <p data-say>"The fixes cost about 2 million dollars a year and cut expected restatement losses by about 6 million, so they pay for themselves three times over. The main risk is that the IPO market cools during the extra three months. To manage that, keep drafting the S-1 in parallel so Fernway can file as soon as the controls pass. Next steps: hire a controller and an SEC reporting lead within 60 days, fix revenue cut-off, rebuild approvals in the new ERP, and have us retest before filing."</p>
-    </div>
-    <h3>The 90-day roadmap</h3>
-    <div class="road">
-      <div class="phase" data-say><span class="d">Days 1–30</span><b>Contain</b><ul><li>Bring in interim controller support.</li><li>Require a second approval on every manual journal entry over a set amount.</li><li>Check revenue cut-off every month-end by matching ship dates to revenue.</li></ul></div>
-      <div class="phase" data-say><span class="d">Days 31–60</span><b>Fix</b><ul><li>Hire the controller and an SEC reporting lead.</li><li>Set up roles in the new ERP so no one can post and approve.</li><li>Start quarterly reviews of system access.</li><li>Write the revenue recognition policy memo.</li></ul></div>
-      <div class="phase" data-say><span class="d">Days 61–90</span><b>Prove</b><ul><li>Retest the failed controls.</li><li>Run a mock quarter-end close, aiming for 15 days.</li><li>Start drafting the S-1 financial sections.</li><li>Go or no-go on the IPO date with the board.</li></ul></div>
-    </div>
-    <h3>Indicators to track</h3>
-    <ul data-say>
-      <li>Days to close the books. Target: 10 by the IPO.</li>
-      <li>Manual journal entries with a second approval. Target: 100 percent.</li>
-      <li>Revenue cut-off exceptions in testing. Target: zero.</li>
-      <li>Errors found after the close. Target: down every quarter.</li>
-    </ul>
-  </div>
+<div class="sh"><span class="idx">09</span><h2>The recommendation</h2><button class="btn small listen" type="button">Listen</button></div>
+<div class="iv">
+<p class="who">Interviewer</p>
+<p data-say="">The CFO just walked in. You have 60 seconds. What's your recommendation?</p>
+</div>
+<div class="move">
+<span class="lbl">Your move</span>
+<p data-say="">Lead with the answer. Then three reasons, the main risk, and next steps.</p>
+<div class="acts"><button class="btn small timer" data-secs="60" type="button">60s timer</button><button aria-controls="a-rec" aria-expanded="false" class="btn primary small reveal" type="button">Show a strong answer</button></div>
+</div>
+<div class="ans" hidden="" id="a-rec">
+<p class="who">Strong answer</p>
+<div class="struct"><span>Answer</span><span>3 reasons</span><span>Risk</span><span>Next steps</span></div>
+<div class="script">
+<p data-say="">"Fernway can go public, but not safely in 12 months on the current plan. I recommend moving the target to about 15 months, and filing the S-1 only after three gaps are fixed and retested."</p>
+<p data-say="">"First, revenue. One in four sampled orders was booked in the wrong month. Revenue is the number investors watch most, and a restatement would cost about 40 million dollars, which is four years of profit."</p>
+<p data-say="">"Second, approvals and access. 30 percent of journal entries had no second approval, and nobody reviews who can get into the accounting system. These are the same two material weaknesses the auditors flagged last year."</p>
+<p data-say="">"Third, timing. The ERP goes live one month before filing, and the close already takes 25 days and is getting slower. Move the go-live earlier, so Fernway runs at least one full quarter-end close on the new system before it files."</p>
+<p data-say="">"The fixes cost about 2 million dollars a year and cut the average yearly cost of a restatement from about 8 million to 2 million, so they pay for themselves three times over. The main risk is that the IPO market cools during the extra three months. To manage that, keep drafting the S-1 in parallel so Fernway can file as soon as the controls pass. Next steps: hire a controller and an SEC reporting lead within 60 days, fix revenue cut-off, rebuild approvals in the new ERP, and have us retest before filing."</p>
+</div>
+<h3>The 90-day roadmap</h3>
+<div class="road">
+<div class="phase" data-say=""><span class="d">Days 1–30</span><b>Contain</b><ul><li>Bring in interim controller support.</li><li>Require a second approval on every manual journal entry over a set amount.</li><li>Check revenue cut-off every month-end by matching ship dates to revenue.</li></ul></div>
+<div class="phase" data-say=""><span class="d">Days 31–60</span><b>Fix</b><ul><li>Hire the controller and an SEC reporting lead.</li><li>Set up roles in the new ERP so no one can post and approve.</li><li>Start quarterly reviews of system access.</li><li>Write the revenue recognition policy memo.</li></ul></div>
+<div class="phase" data-say=""><span class="d">Days 61–90</span><b>Prove</b><ul><li>Retest the failed controls.</li><li>Run a mock quarter-end close, aiming for 15 days.</li><li>Start drafting the S-1 financial sections.</li><li>Go or no-go on the IPO date with the board.</li></ul></div>
+</div>
+<h3>Indicators to track</h3>
+<ul data-say="">
+<li>Days to close the books. Target: 10 by the IPO.</li>
+<li>Manual journal entries with a second approval. Target: 100 percent.</li>
+<li>Revenue cut-off exceptions in testing. Target: zero.</li>
+<li>Errors found after the close. Target: down every quarter.</li>
+</ul>
+</div>
 </section>
-
 <!-- 10 DRILLS -->
 <section class="step" id="drills">
-  <div class="sh"><span class="idx">10</span><h2>Bonus drills: market sizing and growth</h2><button class="btn small listen" type="button">Listen</button></div>
-  <p class="sub">Two short reps in case the interviewer switches to a classic consulting question.</p>
-
-  <div class="drill">
-    <h3>Market sizing: IPO readiness advisory</h3>
-    <div class="iv">
-      <p class="who">Interviewer</p>
-      <p data-say>Estimate the yearly U.S. market for IPO readiness advisory.</p>
-    </div>
-    <div class="move">
-      <span class="lbl">Your move</span>
-      <p data-say>Go top-down. Start with companies big enough to go public, narrow to the ones preparing each year, then multiply by what each one spends. Say each assumption out loud.</p>
-      <div class="acts"><button class="btn small timer" type="button" data-secs="90">90s timer</button></div>
-    </div>
-    <div class="stepper" style="margin-top:14px">
-      <ol class="calc">
-        <li class="st" hidden data-say="Start broad. Assume there are about 20 thousand U.S. private companies with more than 100 million dollars in revenue."><span class="t">Start broad</span><span class="f">U.S. private companies with $100M+ revenue</span><span class="r tnum">≈20,000</span></li>
-        <li class="st" hidden data-say="Times 2 percent that start getting ready for an IPO each year. That's 400 companies."><span class="t">× 2% start IPO prep each year</span><span class="f">Companies preparing per year</span><span class="r tnum">400</span></li>
-        <li class="st" hidden data-say="Spend per company. About 800 thousand on accounting and reporting help, 500 thousand on controls and SOX, and 200 thousand on the close and systems. That's about 1.5 million dollars."><span class="t">Spend per company</span><span class="f">$800K accounting and reporting + $500K controls + $200K close and systems</span><span class="r tnum">≈$1.5M</span></li>
-        <li class="st" hidden data-say="400 companies times 1.5 million dollars is about 600 million dollars a year."><span class="t">Market size</span><span class="f">400 × $1.5M</span><span class="r tnum">≈$600M</span></li>
-        <li class="st" hidden data-say="Sanity check. A typical year sees somewhere around 100 to 300 U.S. IPOs, depending on the market, and many more companies prepare and then wait. So 400 preparing each year is reasonable."><span class="t">Sanity check</span><span class="f">Roughly 100 to 300 U.S. IPOs in a typical year, and many more prepare and wait</span><span class="r tnum">✓</span></li>
-        <li class="st" hidden data-say="Add work after the IPO, like SOX support and quarterly reporting help, and the wider market is likely over 1 billion dollars. The interviewer is grading your structure, not the exact number."><span class="t">Wider view</span><span class="f">Add post-IPO SOX and reporting help: likely over $1B</span><span class="r tnum">✓</span></li>
-      </ol>
-      <div class="row"><button class="btn primary small next" type="button">Reveal step 1 of 6</button><button class="btn small reset" type="button">Start over</button></div>
-    </div>
-    <p class="src">All inputs are interview-style assumptions, not market research.</p>
-  </div>
-
-  <div class="drill">
-    <h3>Market growth: capital markets and accounting advisory</h3>
-    <div class="iv">
-      <p class="who">Interviewer</p>
-      <p data-say>Will demand for capital markets and accounting advisory keep growing?</p>
-    </div>
-    <div class="move">
-      <span class="lbl">Your move</span>
-      <p data-say>Split growth into more deals and more work per deal, then list drivers and headwinds.</p>
-      <div class="acts"><button class="btn small timer" type="button" data-secs="60">60s timer</button><button class="btn primary small reveal" type="button" aria-controls="a-growth" aria-expanded="false">Show a strong answer</button></div>
-    </div>
-    <div class="ans" id="a-growth" hidden>
-      <p class="who">Strong answer</p>
-      <div class="eq">Market growth = more deals × more work per deal</div>
-      <div class="drivers">
-        <div data-say><b>Deal pipeline</b><p>Many companies have stayed private longer and are waiting to go public or be sold. Every deal needs accounting and reporting help.</p></div>
-        <div data-say><b>Carve-outs and M&amp;A</b><p>When a company sells a division, both sides need carve-out financials and acquisition accounting.</p></div>
-        <div data-say><b>New rules and scrutiny</b><p>New FASB disclosure standards, like more detail on expenses and income taxes, plus steady SEC review of filings, mean more technical work.</p></div>
-        <div data-say><b>Systems and talent</b><p>ERP and cloud rollouts change how accounting runs, and many finance teams are short on experienced accountants.</p></div>
-      </div>
-      <h3>Headwinds</h3>
-      <ul data-say>
-        <li>IPOs and deals swing with markets. When markets fall, deals pause.</li>
-        <li>Private capital lets companies raise money without going public.</li>
-        <li>Automation and AI make routine accounting work faster, which pushes prices down.</li>
-      </ul>
-      <h3>Quick math</h3>
-      <p data-say>If IPO readiness work grows 12 percent a year, how long until it doubles? Use the rule of 72: 72 divided by 12 is 6 years.</p>
-      <div class="script"><p data-say>"I expect growth over time, but it will be lumpy. Deals, carve-outs, and new rules keep adding work, while a market downturn can pause IPOs for a year or two. The winners will sell judgment on hard accounting questions, not just extra hands."</p></div>
-    </div>
-  </div>
+<div class="sh"><span class="idx">10</span><h2>Bonus drills: market sizing and growth</h2><button class="btn small listen" type="button">Listen</button></div>
+<p class="sub">Two short reps in case the interviewer switches to a classic consulting question.</p>
+<div class="drill">
+<h3>Market sizing: IPO readiness advisory</h3>
+<div class="iv">
+<p class="who">Interviewer</p>
+<p data-say="">Estimate the yearly U.S. market for IPO readiness advisory.</p>
+</div>
+<div class="move">
+<span class="lbl">Your move</span>
+<p data-say="">Go top-down. Start with companies big enough to go public, narrow to the ones preparing each year, then multiply by what each one spends. Say each assumption out loud.</p>
+<div class="acts"><button class="btn small timer" data-secs="90" type="button">90s timer</button></div>
+</div>
+<div class="stepper" style="margin-top:14px">
+<ol class="calc">
+<li class="st" data-say="Start broad. Assume there are about 20 thousand U.S. private companies with more than 100 million dollars in revenue." hidden=""><span class="t">Start broad</span><span class="f">U.S. private companies with $100M+ revenue</span><span class="r tnum">≈20,000</span></li>
+<li class="st" data-say="Times 2 percent that start getting ready for an IPO each year. That's 400 companies." hidden=""><span class="t">× 2% start IPO prep each year</span><span class="f">Companies preparing per year</span><span class="r tnum">400</span></li>
+<li class="st" data-say="Spend per company. About 800 thousand on accounting and reporting help, 500 thousand on controls and SOX, and 200 thousand on the close and systems. That's about 1.5 million dollars." hidden=""><span class="t">Spend per company</span><span class="f">$800K accounting and reporting + $500K controls + $200K close and systems</span><span class="r tnum">≈$1.5M</span></li>
+<li class="st" data-say="400 companies times 1.5 million dollars is about 600 million dollars a year." hidden=""><span class="t">Market size</span><span class="f">400 × $1.5M</span><span class="r tnum">≈$600M</span></li>
+<li class="st" data-say="Sanity check. A typical year sees somewhere around 100 to 300 U.S. IPOs, depending on the market, and many more companies prepare and then wait. So 400 preparing each year is reasonable." hidden=""><span class="t">Sanity check</span><span class="f">Roughly 100 to 300 U.S. IPOs in a typical year, and many more prepare and wait</span><span class="r tnum">✓</span></li>
+<li class="st" data-say="Add work after the IPO, like SOX support and quarterly reporting help, and the wider market is likely over 1 billion dollars. The interviewer is grading your structure, not the exact number." hidden=""><span class="t">Wider view</span><span class="f">Add post-IPO SOX and reporting help: likely over $1B</span><span class="r tnum">✓</span></li>
+</ol>
+<div class="row"><button class="btn primary small next" type="button">Reveal step 1 of 6</button><button class="btn small reset" type="button">Start over</button></div>
+</div>
+<p class="src">All inputs are interview-style assumptions, not market research.</p>
+</div>
+<div class="drill">
+<h3>Market growth: capital markets and accounting advisory</h3>
+<div class="iv">
+<p class="who">Interviewer</p>
+<p data-say="">Will demand for capital markets and accounting advisory keep growing?</p>
+</div>
+<div class="move">
+<span class="lbl">Your move</span>
+<p data-say="">Split growth into more deals and more work per deal, then list drivers and headwinds.</p>
+<div class="acts"><button class="btn small timer" data-secs="60" type="button">60s timer</button><button aria-controls="a-growth" aria-expanded="false" class="btn primary small reveal" type="button">Show a strong answer</button></div>
+</div>
+<div class="ans" hidden="" id="a-growth">
+<p class="who">Strong answer</p>
+<div class="eq">Market growth = more deals × more work per deal</div>
+<div class="drivers">
+<div data-say=""><b>Deal pipeline</b><p>Many companies have stayed private longer and are waiting to go public or be sold. Every deal needs accounting and reporting help.</p></div>
+<div data-say=""><b>Carve-outs and M&amp;A</b><p>When a company sells a division, both sides need carve-out financials and acquisition accounting.</p></div>
+<div data-say=""><b>New rules and scrutiny</b><p>New FASB disclosure standards, like more detail on expenses and income taxes, plus steady SEC review of filings, mean more technical work.</p></div>
+<div data-say=""><b>Systems and talent</b><p>ERP and cloud rollouts change how accounting runs, and many finance teams are short on experienced accountants.</p></div>
+</div>
+<h3>Headwinds</h3>
+<ul data-say="">
+<li>IPOs and deals swing with markets. When markets fall, deals pause.</li>
+<li>Private capital lets companies raise money without going public.</li>
+<li>Automation and AI make routine accounting work faster, which pushes prices down.</li>
+</ul>
+<h3>Quick math</h3>
+<p data-say="">If IPO readiness work grows 12 percent a year, how long until it doubles? Use the rule of 72: 72 divided by 12 is 6 years.</p>
+<div class="script"><p data-say="">"I expect growth over time, but it will be lumpy. Deals, carve-outs, and new rules keep adding work, while a market downturn can pause IPOs for a year or two. The winners will sell judgment on hard accounting questions, not just extra hands."</p></div>
+</div>
+</div>
 </section>
-
 <!-- 11 TEST -->
 <section class="step test" id="test">
-  <div class="sh"><span class="idx">11</span><h2>Practice test</h2><button class="btn small listen" type="button">Listen</button></div>
-  <p class="sub" data-say>Twelve multiple-choice questions on concepts and the Fernway case. Pick an answer to see the explanation.</p>
-  <div class="scorebar"><span class="score" id="score">0 / 0<small>answered 0 of 12</small></span><button class="btn small" type="button" id="resetTest">Reset test</button></div>
-  <div id="testq"></div>
-  <div class="done" id="done" hidden></div>
+<div class="sh"><span class="idx">11</span><h2>Practice test</h2><button class="btn small listen" type="button">Listen</button></div>
+<p class="sub" data-say="">Twelve multiple-choice questions on concepts and the Fernway case. Pick an answer to see the explanation.</p>
+<div class="scorebar"><span class="score" id="score">0 / 0<small>answered 0 of 12</small></span><button class="btn small" id="resetTest" type="button">Reset test</button></div>
+<div id="testq"></div>
+<div class="done" hidden="" id="done"></div>
 </section>
-
 </div>
 </main>
-
 <footer>
-  <div class="wrap">
-    <p>Case figures, exhibits, and the company are invented for practice. Descriptions of CMAAS work are general and based on PwC's public <a href="https://www.pwc.com/us/en/services/consulting/deals/capital-markets/capital-markets-accounting-advisory-services.html" target="_blank" rel="noopener">Capital Markets and Accounting Advisory Services</a> page.</p>
-    <p>Night-before tip: run steps 04, 05, and 09 out loud once more in the morning, then take the test.</p>
-  </div>
+<div class="wrap">
+<p>Case figures, exhibits, and the company are invented for practice. Descriptions of CMAAS work are general and based on PwC's public <a href="https://www.pwc.com/us/en/services/consulting/deals/capital-markets/capital-markets-accounting-advisory-services.html" rel="noopener" target="_blank">Capital Markets and Accounting Advisory Services</a> page.</p>
+<p>Night-before tip: run steps 04, 05, and 09 out loud once more in the morning, then take the test.</p>
+</div>
 </footer>
-<div id="tip" hidden role="tooltip"></div>
-
+<div hidden="" id="tip" role="tooltip"></div>
 <script>
 (function(){
   "use strict";
@@ -913,8 +886,8 @@ footer{padding-block:40px 64px;border-top:1px solid var(--line);font-size:14px;c
 
   /* ---------- Risk sizing chart ---------- */
   const roi=$("#roi"),RM=10;
-  [{n:"Do nothing",d:"Expected loss at 20% odds",seg:[[8,"","Expected restatement loss: $8M"]],tot:"$8M"},
-   {n:"Invest in the program",d:"Expected loss at 5% odds + cost",seg:[[2,"","Expected restatement loss: $2M"],[2,"b2","Fix program cost: $2M"]],tot:"$4M"}]
+  [{n:"Do nothing",d:"Expected loss at 20% odds ($40M ÷ 5)",seg:[[8,"","Expected restatement loss: $8M"]],tot:"$8M"},
+   {n:"Invest in the program",d:"Expected loss at 5% odds ($40M ÷ 20) + $2M program",seg:[[2,"","Expected restatement loss: $2M"],[2,"b2","Fix program cost: $2M"]],tot:"$4M"}]
   .forEach(r=>{const row=document.createElement("div");row.className="hrow";let x=0,bars="";
     r.seg.forEach(([v,c,t],i)=>{const left=x/RM*100,w=v/RM*100;
       bars+=`<div class="bar ${c}" tabindex="0" data-tip="${t}" style="left:calc(${left}% + ${i?2:0}px);width:calc(${w}% - ${i?2:0}px);border-radius:${i===r.seg.length-1?"0 4px 4px 0":"0"}"></div>`;x+=v;});
@@ -997,7 +970,7 @@ footer{padding-block:40px 64px;border-top:1px solid var(--line);font-size:14px;c
     {q:"Which is a benefit for an emerging growth company?",o:["It never needs an audit","It can show two years of audited financials instead of three","It pays no income taxes","It can skip quarterly filings"],a:1,w:"EGCs, with under about 1.2 billion dollars in revenue, get lighter rules: two years of audited financials and a delay on the auditor testing their controls."},
     {q:"Under SOX 404, who assesses internal controls over financial reporting?",o:["Only the SEC","Management, and for larger companies the auditor tests them too","Only the board's compensation committee","The company's largest investors"],a:1,w:"Management assesses the controls every year under 404(a). Once a company is large enough, the auditor also tests them under 404(b)."},
     {q:"A restatement is…",o:["Reissuing past financial statements to correct a material error","A new budget for next year","A press release about quarterly earnings","A change of audit firm"],a:0,w:"Restatements are expensive and hurt investor trust, which is why IPO readiness work focuses on getting the numbers right before filing."},
-    {q:"A restatement would cost $30 million and has a 10% chance per year. What's the expected annual loss?",o:["$300,000","$3 million","$10 million","$30 million"],a:1,w:"$30 million × 10% = $3 million a year. Impact of one event times the chance it happens in a year."},
+    {q:"A restatement would cost $30 million and has a 10% chance per year. What's the expected annual loss?",o:["$300,000","$3 million","$10 million","$30 million"],a:1,w:"$30 million × 10% = $3 million a year. A 10% chance is about once every 10 years, and $30 million ÷ 10 = $3 million."},
     {q:"In the Fernway case, which data point best shows that finance isn't scaling?",o:["Bank reconciliation exceptions stayed at 2 or 3","Revenue grew about 40 percent","Errors after the close went from 4 to 15 while the team stayed at 15 people","Inventory counts failed 4 percent of the time"],a:2,w:"The business grew, the team didn't, and errors almost quadrupled. That's the clearest sign the process is stretched."},
     {q:"Why is an ERP go-live one month before filing risky?",o:["New systems always get cheaper later","Data migration errors and untested controls could hit right when clean numbers matter most","The SEC doesn't allow new systems before an IPO","Auditors can't test ERP systems"],a:1,w:"Companies usually want at least one full quarter-end close on a new system before they file, so problems surface early."},
     {q:"Which is the strongest opening line for your final recommendation?",o:["Let me walk you through everything I looked at.","There's a lot to fix before an IPO.","It depends on the board's priorities.","Fernway should go public in about 15 months, after fixing three gaps in the next 90 days."],a:3,w:"Lead with the answer, then support it. Consultants call this answer-first, or the pyramid principle."},
