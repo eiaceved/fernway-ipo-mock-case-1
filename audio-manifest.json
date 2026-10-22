@@ -573,7 +573,7 @@
  },
  {
   "hash": "38dee0313ba3976908486615858938c0defde98f",
-  "text": "R1 and R2 score highest, and they're backed by evidence: failed tests in Exhibit 2 and the same material weaknesses as last year. R3 is high impact, and its timing is fully in Fernway's control, so move the go-live. R4, the slow close, scores high too, but it's mostly a symptom that improves as you fix approvals, the system, and staffing. R5 is part of the fix: hire. R6 is low on both."
+  "text": "R1 and R2 score highest, and they're backed by evidence: failed tests in Exhibit 2 and the same material weaknesses as last year. R3 is high impact, and its timing is fully in Fernway's control: don't file until the new system has run clean quarter-end closes. R4, the slow close, scores high too, but it's mostly a symptom that improves as you fix approvals, the system, and staffing. R5 is part of the fix: hire. R6 is low on both."
  },
  {
   "hash": "e384f9f7d0838bb158b1bf92f6497fe11cdb2928",
@@ -608,16 +608,72 @@
   "text": "\"Second, approvals and access. 30 percent of journal entries had no second approval, and nobody reviews who can get into the accounting system. These are the same two material weaknesses the auditors flagged last year.\""
  },
  {
-  "hash": "1a85e68c45b80f1eadddbe2dc13a7e4caeedde41",
-  "text": "\"Third, timing. The ERP goes live one month before filing, and the close already takes 25 days and is getting slower. Move the go-live earlier, so Fernway runs at least one full quarter-end close on the new system before it files.\""
+  "hash": "aae14688ccd11bc2b1c16b19ecec06faa9e0777e",
+  "text": "\"Third, timing. Fixing a control takes weeks, but proving it works takes quarters. The auditors need to see the fixes work at real quarter-end closes, in the new ERP that goes live in month 8. The first two quarter-ends on the new system are months 9 and 12. So Fernway files in month 12, and with the same three months from filing to IPO as today's plan, goes public around month 15.\""
  },
  {
   "hash": "281e9624503a4a8e03de0aaf93f0400f22e17276",
   "text": "\"The fixes cost about 2 million dollars a year and cut the average yearly cost of a restatement from about 8 million to 2 million, so they pay for themselves three times over. The main risk is that the IPO market cools during the extra three months. To manage that, keep drafting the S-1 in parallel so Fernway can file as soon as the controls pass. Next steps: hire a controller and an SEC reporting lead within 60 days, fix revenue cut-off, rebuild approvals in the new ERP, and have us retest before filing.\""
  },
  {
-  "hash": "fe1619a64022147c98e82a41c815691074476b17",
-  "text": "The 90-day roadmap"
+  "hash": "7035a4183515f00fd9ace80a19960028f8bdc681",
+  "text": "Why 15 months if the fixes take 90 days?"
+ },
+ {
+  "hash": "6ea7fd2693874dc6e4153b111043c54c4d90d420",
+  "text": "Because fixing a control and proving it are different. In 90 days, Fernway can redesign the controls and pass a first retest. But auditors only treat a material weakness as fixed once the control has worked for a while, usually through more than one quarter-end close. And Fernway switches to a new ERP in month 8, so the fixes have to be proven again in the new system, at the quarter-ends in months 9 and 12. Filing before then means filing numbers nobody can vouch for yet."
+ },
+ {
+  "hash": "31c46106096185dbce835877c5f57eba32acc768",
+  "text": "This is a common pushback. If the interviewer asks, \"If the fixes take 90 days, why not keep the 12-month date?\", give the answer above in two sentences."
+ },
+ {
+  "hash": "7fe40e99c6b054501aa2048140e20e491d06e70b",
+  "text": "The path to an IPO in month 15"
+ },
+ {
+  "hash": "f04a62115b25a75bb7e16835ba151cabb02842b3",
+  "text": "Contain and fix the three gaps, using the 90-day plan below."
+ },
+ {
+  "hash": "e46224c11d2b4df7d36f4674914ec81f87edd3b2",
+  "text": "Hire the controller and SEC reporting lead."
+ },
+ {
+  "hash": "bc4a60320ba883f848e46cf43ae8eb63a734dd2e",
+  "text": "First retest of the redesigned controls."
+ },
+ {
+  "hash": "04d408ce121afc5dd783d1e598f06a9e33c11050",
+  "text": "The fixed controls run through the month-6 quarter-end."
+ },
+ {
+  "hash": "b4c8a0fdb38cb040ad62d0627e0ce7462882767f",
+  "text": "The ERP goes live in month 8, with the new approval roles built in."
+ },
+ {
+  "hash": "f5a991d49e5e74b0d86f1990d8611e94e3431dcc",
+  "text": "Quarter-end closes in months 9 and 12 on the new system, retested each time."
+ },
+ {
+  "hash": "4705c316e9a4d4f7ca9df7f5553b88ff37f85174",
+  "text": "Auditors finish the two-year audit while the S-1 is drafted."
+ },
+ {
+  "hash": "a535e4cac18628d57fbb9331629e030da824d7dc",
+  "text": "File the S-1 once the month-12 retest passes."
+ },
+ {
+  "hash": "47b4735562890468dbc5e543855ddbef3dfc8685",
+  "text": "Answer the SEC's comments."
+ },
+ {
+  "hash": "4a69268ee428a0c48c59b58129d70384eb3fcf4a",
+  "text": "Roadshow, then the IPO around month 15."
+ },
+ {
+  "hash": "bbfcbef26a2b0fc190e28393b0f609586d716c97",
+  "text": "The first 90 days in detail"
  },
  {
   "hash": "33437a4f71f7b66ca4e6e026ca3d9a12cddef047",
@@ -648,8 +704,8 @@
   "text": "Write the revenue recognition policy memo."
  },
  {
-  "hash": "bff3a3138a059522dbfe964c2798a074ce04be5c",
-  "text": "Retest the failed controls."
+  "hash": "fdabe9e08e0b6b5f4e2fc796db4261e5fa1d50db",
+  "text": "Retest the redesigned controls."
  },
  {
   "hash": "71478b207db3fdd4de2a99c31fb2fd490f43ce90",
@@ -660,16 +716,16 @@
   "text": "Start drafting the S-1 financial sections."
  },
  {
-  "hash": "3b8c03a2f6f0fa6455877289d433574467f8511e",
-  "text": "Go or no-go on the IPO date with the board."
+  "hash": "9b99264f0db7f1a86cafe38d171cb9edaf4624cb",
+  "text": "Confirm the month-15 IPO plan with the board."
  },
  {
   "hash": "b9b41615d12e8fe4d1aaed546d53c16e42d13f3f",
   "text": "Indicators to track"
  },
  {
-  "hash": "0157a899e79e47f9f37a6c94fad4c86859abd318",
-  "text": "Days to close the books. Target: 10 by the IPO."
+  "hash": "b4eb0e90dce7c3b325317789470cabfd8523fc78",
+  "text": "Days to close the books. Target: 10 by filing in month 12."
  },
  {
   "hash": "624fa9eede64fb792f09fbe2dfc22071da910e5b",
